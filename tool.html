@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工具箱 - Susu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Susu</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="tool.html" class="active">工具</a></li>
+        <li><a href="index.html#about">关于</a></li>
+        <li><a href="index.html#contact">联系</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="tool-hero">
+    <div class="container">
+      <div class="section-tag">✦ 工具箱</div>
+      <h1>我正在使用的<span class="gradient-text">一切工具</span></h1>
+      <p>从资源网站到创作工具，从开发利器到效率神器——全部免费，直接访问。</p>
+      <div class="tool-search">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="toolSearch" placeholder="搜索工具名称或关键词...">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="tool-filters" id="toolFilters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="ai">🤖 AI 工具</button>
+        <button class="filter-btn" data-filter="dev">💻 开发工具</button>
+        <button class="filter-btn" data-filter="design">🎨 设计工具</button>
+        <button class="filter-btn" data-filter="efficiency">⚡ 效率工具</button>
+        <button class="filter-btn" data-filter="resource">📚 资源网站</button>
+        <button class="filter-btn" data-filter="media">🎬 媒体创作</button>
+      </div>
+
+      <div class="tool-grid" id="toolGrid"></div>
+
+      <div class="no-results" id="noResults">
+        <div class="emoji">🔍</div>
+        <h3>没有找到相关工具</h3>
+        <p>试试换个关键词搜索？</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Susu · 用 ❤️ 和代码构建 · 所有工具永久免费</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tools.js"></script>
+</body>
+</html>
